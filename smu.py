@@ -28,7 +28,7 @@ class SMU(nn.Module):
             aplha is initialized with zero value by default
         '''
         super(SMU,self).__init__()
-        self.alpha = 0.25
+        self.alpha = alpha
         # initialize mu
         self.mu = torch.nn.Parameter(torch.tensor(1000000.0)) 
         
@@ -61,7 +61,7 @@ class SMU1(nn.Module):
             aplha is initialized with zero value by default
         '''
         super(SMU1,self).__init__()
-        self.alpha = 0.25
+        self.alpha = alpha
         # initialize mu
         self.mu = torch.nn.Parameter(torch.tensor(4.352665993287951e-9)) 
         
