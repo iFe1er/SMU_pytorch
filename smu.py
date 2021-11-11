@@ -11,7 +11,7 @@ class SMU(nn.Module):
           dimensions
         - Output: (N, *), same shape as the input
     Parameters:
-        - mu - trainable parameter
+        - alpha: hyper parameter
     References:
         - See related paper:
         https://arxiv.org/abs/2111.04682
@@ -24,8 +24,7 @@ class SMU(nn.Module):
         '''
         Initialization.
         INPUT:
-            - in_features: shape of the input
-            - aplha: trainable parameter
+            - alpha: hyper parameter
             aplha is initialized with zero value by default
         '''
         super(SMU,self).__init__()
@@ -45,7 +44,7 @@ class SMU1(nn.Module):
           dimensions
         - Output: (N, *), same shape as the input
     Parameters:
-        - mu - trainable parameter
+        - alpha: hyper parameter
     References:
         - See related paper:
         https://arxiv.org/abs/2111.04682
@@ -58,8 +57,7 @@ class SMU1(nn.Module):
         '''
         Initialization.
         INPUT:
-            - in_features: shape of the input
-            - aplha: trainable parameter
+            - alpha: hyper parameter
             aplha is initialized with zero value by default
         '''
         super(SMU1,self).__init__()
